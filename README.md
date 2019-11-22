@@ -34,11 +34,10 @@
 
 ### chatテーブル
 |Column|Type|Options|
-|message|string|null: false,|
-|user_id|integer|null: false,|
-|date|string|null: false,|
-|group id|string|null: false,|
-|image|
+|image|text|----|
+|create_at|datetime|----|
+|group id|string|null: false, foreign_key: true|
+### Association|
 ### Association
 -  belongs_to :user
 - belongs_to :group
