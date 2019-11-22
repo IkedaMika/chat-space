@@ -23,7 +23,7 @@
 
 ### groupsテーブル
 |Column|Type|Options|
-|name|string|null: false,foreign_key: true|
+|name|string|---------------|
 ### Association
 - has_many :users, throug:  :groups_users
 - has_many :groups_users
@@ -36,6 +36,7 @@
 |Column|Type|Options|
 |user_id|integrer|null: false, foreign_key: true|
 |image|text|----|
+|text|text|------|
 |create_at|datetime|----|
 |group id|integer|null: false, foreign_key: true|
 
