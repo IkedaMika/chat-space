@@ -23,7 +23,7 @@
 
 ### groupsテーブル
 |Column|Type|Options|
-|name|string|null: false|
+|name|string|null: false,foreign_key: true|
 ### Association
 - has_many :users, throug:  :groups_users
 - has_many :groups_users
@@ -34,9 +34,11 @@
 
 ### chatテーブル
 |Column|Type|Options|
+|user_id|integrer|null: false, foreign_key: true|
 |image|text|----|
 |create_at|datetime|----|
-|group id|string|null: false, foreign_key: true|
+|group id|integer|null: false, foreign_key: true|
+
 ### Association|
 ### Association
 -  belongs_to :user
