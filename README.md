@@ -38,6 +38,7 @@
 |user_id|integer|null: false,|
 |date|string|null: false,|
 |group id|string|null: false,|
+|image|
 ### Association
 -  belongs_to :user
 - belongs_to :group
