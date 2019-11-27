@@ -1,0 +1,196 @@
+.side-bar{
+   width :300px;
+   float: left;
+
+  .header {
+    justify-content: space-between;
+      background-color:  #253141;
+      height :100px;
+    width :260px;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    
+    
+    
+ 
+
+   &__name {
+      font-size: 16px ;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    &__icon {
+       color:white;
+      .fas{
+        color: white;
+      }
+      }
+   }
+
+.contents{
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  width: 300px;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+  
+  
+  &__group-name{
+    font-size: 15px;
+    color: #ffffff;
+     }
+
+  &__title{
+    font-size: 11px;
+    color: #ffffff;
+    }
+  }
+}
+
+.main{
+  width: calc(100vw - 300px);
+  float: left;
+  
+
+  .header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eee;
+    padding: 0px 20px;
+    box-sizing: border-box;
+  
+    
+   
+    &__left{
+      margin-top: 35px;
+
+    
+
+         &__group{
+            font-size: 20px;
+            color: #333;
+            align-items: center;
+            }
+          &__membar{
+     
+             font-size: 12px;
+             color: #999999;
+             }
+            }
+    &__right{
+      height:40px;
+      margin:30px 0px 0px;
+      padding:0px 20px;
+      color: #38aef0;
+      border: solid 1px #38aef0;
+      text-align: center;
+     }
+
+     &__box{
+       margin-top: 10px;
+     }
+
+     
+  }
+}
+.masages{
+  background-color:#fafafa ;
+  padding: 46px 40px;
+  height: calc(100vh - 190px);
+  box-sizing: border-box;
+  
+
+  &__masage{
+    padding-bottom: 40px;
+   }
+
+   &__upper{
+     display: flex;
+     margin-bottom: 10px;
+   }
+
+   &__name{
+    color: #434a54;
+    font-size: 16px;
+    font-weight: bold;
+  }
+   &__date{
+    color: #999999;
+    font-size: 12px;
+    margin-left: 10px;
+   }
+
+   &__down{
+    color: #434a54;
+    font-size: 14px;
+    margin-bottom: 10px;
+   }
+}
+
+.form{
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #ddd;
+  box-sizing: border-box;
+  
+  
+
+  &__new_masage{
+    display: flex;
+  }
+
+  &__box{
+    position: relative;
+    width: 100%;
+    &__text{
+      height: 50px;
+      width: 100%;
+      padding: 0 40px 0 10px;
+      box-sizing: border-box;
+       color: #434a54;
+       border-style: none;}
+  }
+
+  &__type{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+
+  }
+
+
+
+
+
+&__file {
+   display: none;
+
+ }
+
+.submit-btn{
+  width: 100px;
+  height: 50px;
+  padding: 0 30px;
+ 
+  margin-left: 15px;
+  background-color: #38aef0;
+  color: white;
+  cursor: pointer;
+  
+}
+}
+
+
+
+
+  
+
+  
+  
+
+
+
