@@ -1,0 +1,38 @@
+.main
+  .header
+    .header__left
+      .header__group 
+        group name
+      .header__Member
+        Membar:
+    .header__right
+      .header__box
+        Edit
+  .masages
+    .masages__masage
+      .masages__upper
+        .masages__name
+          seo
+        .masages__date
+          1992/07/27
+      .masages__down
+        .masages_text
+          疲れた
+  .form
+    .form__new_masage
+      .form__box
+        %input.form__box__text{name: "message[content]", placeholder: "type a message", type: "text"}
+
+        %label.form__type
+          .form__image  
+            = icon('fas', 'image')
+          .form__file
+            %input.input-box__image__file{name: "message[:image]", type: "file"}
+
+
+      %input.submit-btn{data_disable_with: "Send", name: "commit", type: "submit", value: "Send"}
+        
+    
+   
+    
+    
