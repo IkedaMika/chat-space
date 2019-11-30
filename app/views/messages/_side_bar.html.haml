@@ -9,9 +9,13 @@
         = icon('fas','edit')
     
   .contents
-    .contents__group-name
-      SAMPLE
-    .contents__title
-      hi
+    - current_user.groups.each do |group|
+      .contents
+        = link_to '#' do
+          .contents__name
+            = group.name
+          .contents__title
+            メッセージはまだありません。
+      
 
 
