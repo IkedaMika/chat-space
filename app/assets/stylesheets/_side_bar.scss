@@ -24,28 +24,32 @@
        color:white;
       .fas{
         color: white;
+      
       }
-      }
-   }
-
+    }
+  }
 .contents{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   width: 300px;
   padding: 20px 20px 0;
   box-sizing: border-box;
+  }
+  .content{
+    color: #FFFFFF;
+    margin: 0 0 40px;
   
-  
-  &__group-name{
-    font-size: 15px;
-    color: #ffffff;
-     }
+    &__group-name{
+      font-size: 15px;
+      color: #ffffff;
+      }
 
-  &__title{
-    font-size: 11px;
-    color: #ffffff;
+    &__title{
+      font-size: 11px;
+      color: #ffffff;
     }
   }
+ 
 }
 
 .main{
@@ -183,14 +187,3 @@
   
 }
 }
-
-
-
-
-  
-
-  
-  
-
-
-
