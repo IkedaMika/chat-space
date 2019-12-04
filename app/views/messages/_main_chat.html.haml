@@ -2,37 +2,32 @@
   .header
     .header__left
       .header__group 
-        group name
+        #{@group.name}
       .header__Member
         Membar:
+        .header__Member__list
+          - @group.users.each do |group_member|
+            %div #{group_member.name}&nbsp;
     .header__right
       .header__box
         Edit
   .masages
+    = render @messages
     .masages__masage
       .masages__upper
         .masages__name
-          seo
+          
         .masages__date
-          1992/07/27
+      
       .masages__dowt
+
         .masages_text
-          疲れた
-  .form
-    .form__new_masage
-      .form__box
-        %input.form__box__text{name: "message[content]", placeholder: "type a message", type: "text"}
-
-        %label.form__type
-          .form__image  
-            = icon('fas', 'image')
-          .form__file
-            %input.input-box__image__file{name: "message[:image]", type: "file"}
-
-
-      %input.submit-btn{data_disable_with: "Send", name: "commit", type: "submit", value: "Send"}
         
-    
-   
-    
-    
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit-btn'
