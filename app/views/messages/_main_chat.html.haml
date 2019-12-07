@@ -11,17 +11,8 @@
     .header__right
       .header__box
         Edit
-  .masages
+  .messages
     = render @messages
-    .masages__masage
-      .masages__upper
-        .masages__name
-          
-        .masages__date
-      
-      .masages__dowt
-
-        .masages_text
         
   .form
     = form_for [@group, @message] do |f|
