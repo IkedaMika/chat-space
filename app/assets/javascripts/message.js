@@ -2,20 +2,20 @@ $(function(){
   function buildHTML(message){
   if(message.image){
     var html=`<div class="message" data-message-id="${message.id}">
-              <div class="upper-message">
-              <div class="upper-message__user-name">
-              ${message.user_name}
-              </div>
-              <div class="upper-message__date">
-              ${message.date}
-              </div>
-              </div>
+                <div class="upper-message">
+                  <div class="upper-message__user-name">
+                    ${message.user_name}
+                  </div>
+                  <div class="upper-message__date">
+                    ${message.date}
+                  </div>
+                </div>
               <div class="lower-message">
-              <p class="lower-message__content">
-              ${message.content}
-              </p>
+                <p class="lower-message__content">
+                  ${message.content}
+                </p>
               </div>
-              <img src="${message.image}" >
+                <img src="${message.image}" >
               </div>`
       return html;
   }else{
@@ -50,12 +50,11 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.table(data)
       var html = buildHTML(data);
-      $('.messages').append(html);
-      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
-      $('form')[0].reset();
-      $('.form__submit-btn').prop("disabled", false)
+        $('.messages').append(html);
+        $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+        $('form')[0].reset();
+        $('.form__submit-btn').prop("disabled", false)
     })
         .fail(function(){
           alert('メッセージ送信に失敗しました');
