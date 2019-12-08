@@ -50,15 +50,14 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.table(data)
       var html = buildHTML(data);
       $('.messages').append(html);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       $('form')[0].reset();
       $('.form__submit-btn').prop("disabled", false)
     })
-        .fail(function(){
-          alert('メッセージ送信に失敗しました');
+    .fail(function(){
+      alert('メッセージ送信に失敗しました');
         });
       });
     });
