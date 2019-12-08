@@ -99,7 +99,8 @@
      
   }
 }
-.masages{
+.messages{
+  overflow: scroll;
   background-color:#fafafa ;
   padding: 46px 40px;
   height: calc(100vh - 190px);
