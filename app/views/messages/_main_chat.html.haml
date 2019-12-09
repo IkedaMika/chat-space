@@ -1,16 +1,17 @@
 .main
   .header
     .header__left
-      .header__group 
+      %h2.header__left__group 
         #{@group.name}
-      .header__Member
+      %ul.header__left__Member
         Membar:
-        .header__Member__list
-          - @group.users.each do |group_member|
-            %div #{group_member.name}&nbsp;
+        %li.header__left__Member__list
+        - @group.users.each do |group_member|
+          %div #{group_member.name}&nbsp;
     .header__right
-      .header__box
-        Edit
+      .header__right__box
+        = link_to edit_group_path(@group[:id]) do
+          Edit
   .messages
     = render @messages
         
