@@ -16,7 +16,7 @@ set :rbenv_ruby, '2.5.1' #カリキュラム通りに進めた場合、2.5.1か2
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
-                  keys: ['79ccd72c5831cb2e3a486dc938726f77ff350f5101b04cf0e17c1a9d1c5ce24f8639330c64c452ee55ec51dd0e01bcc0bc31ac0cc3808e5767985ce6504acd59']  
+                  keys: ['~/.ssh/bivitest.pem']  
 
 # プロセス番号を記載したファイルの場所
 set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
